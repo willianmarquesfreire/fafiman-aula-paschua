@@ -3,10 +3,14 @@ package com.genericrest.model;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.time.ZonedDateTime;
 
+@XmlRootElement
 @Entity
-public class JobHistory extends Job {
+@Table
+public class JobHistory extends AbstractEntity {
 
     private ZonedDateTime startDate;
 

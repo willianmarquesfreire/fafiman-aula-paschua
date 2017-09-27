@@ -2,10 +2,14 @@ package com.genericrest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.time.ZonedDateTime;
 
 @Entity
-public class Person extends Job {
+@XmlRootElement
+@Table
+public class Person extends AbstractEntity {
 
     private String firstName;
 

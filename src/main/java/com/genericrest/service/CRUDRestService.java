@@ -17,7 +17,7 @@ public interface CRUDRestService<T extends AbstractEntity> {
     Response getById(Long id);
     
     Response getAll();
-    
+
     Response save(T entity);
     
     Response update(T entity, Long id);

@@ -1,8 +1,12 @@
 package com.genericrest.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
+@XmlRootElement
+@Table
 public class Location extends AbstractEntity {
 
     private String stressAddress;

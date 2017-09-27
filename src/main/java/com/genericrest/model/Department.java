@@ -2,8 +2,12 @@ package com.genericrest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
+@XmlRootElement
+@Table
 public class Department extends AbstractEntity {
 
     private String departmentName;
